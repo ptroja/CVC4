@@ -170,7 +170,7 @@ class DefinedFunction {
   Node d_formula;
 public:
   DefinedFunction() {}
-  DefinedFunction(Node func, vector<Node> formals, Node formula) :
+  DefinedFunction(Node func, vector<Node>& formals, Node formula) :
     d_func(func),
     d_formals(formals),
     d_formula(formula) {
